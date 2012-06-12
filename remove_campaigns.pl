@@ -158,16 +158,3 @@ END
    exit(1);
 }
 
-# note to self: 
-#
-#SELECT CONVERT(VARCHAR(10), CallDate, 101), campaignID
-#  FROM resultsCampaignCall 
-# WHERE mediaProviderID = 31
-#   AND CallDate >= '2010-04-30'
-#   AND CampaignID IN 
-#       (80, 139, 305, 309, 485, 6340, 18233, 21430, 35192,
-#           38303, 50019, 55241, 55283, 57436, 57479, 59998, 60090, 66250, 70841,
-#           72270, 73067, 77540 ,250019)
-#GROUP BY CONVERT(VARCHAR(10), CallDate, 101), campaignID
-#ORDER BY CONVERT(VARCHAR(10), CallDate, 101)
-#
